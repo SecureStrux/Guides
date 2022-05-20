@@ -1,4 +1,4 @@
-# SecureStrux-Guides
+# Guides
 
 ## How To: Create a vCenter Server Appliance (VCSA) Scanning Account for Use with Tenable Nessus
 Performing [Nessus Credentialed Checks](https://docs.tenable.com/nessus/Content/NessusCredentialedChecks.htm) on the vCenter Server Appliance's (VCSA) underlying [Photon OS](https://github.com/vmware/photon) requires the creation of a privileged scanning account that defaults to the `bash` shell at logon.
