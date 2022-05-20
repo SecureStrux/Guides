@@ -4,7 +4,7 @@
 Performing [Nessus Credentialed Checks](https://docs.tenable.com/nessus/Content/NessusCredentialedChecks.htm) on the vCenter Server Appliance's (VCSA) underlying [Photon OS](https://github.com/vmware/photon) requires the creation of a privileged scanning account that defaults to the `bash` shell at logon.
 
 ### vCenter Server Appliance (VCSA) Roles:
-VMWare has established the following [VCSA Roles](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vcenter.configuration.doc/GUID-4FE047BA-5B2B-4FAB-8AC9-246ABCD3E2A1.html). The scanning account must be a **Super Administrator** for scans to succeed, as it needs access to the **Bash Shell**.
+VMWare has established the following [VCSA Roles](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vcenter.configuration.doc/GUID-4FE047BA-5B2B-4FAB-8AC9-246ABCD3E2A1.html). The scanning account must be a **Super Administrator** for scans to succeed, as it needs access to run privileged commands from the **Bash Shell**.
 
 #### Operator
 Local users with the operator user role can read vCenter Server configuration.
