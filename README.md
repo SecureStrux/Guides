@@ -37,4 +37,5 @@ The default shell for new vCenter Server Appliance (VCSA) user accounts is the A
     chsh nessus-scan --shell /bin/bash
     ```
 3. Confirm the change by viewing the scanning account's login shell in `/etc/passwd` by issuing the `cat /etc/passwd` command
-    <img src="https://user-images.githubusercontent.com/86627856/169600276-fd2cd009-185f-479f-ba59-d7144481015e.png" width=50% height=50%></br>
+   
+   <img src="https://user-images.githubusercontent.com/86627856/169600276-fd2cd009-185f-479f-ba59-d7144481015e.png" width=50% height=50%></br>
