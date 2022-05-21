@@ -46,7 +46,7 @@ The default shell for new vCenter Server Appliance (VCSA) user accounts is the A
     #This command will change the nessus-scan accounts login shell to /bin/bash. Change name of the account, if necessary.
     chsh nessus-scan --shell /bin/bash
     ```
-3. Confirm the change by viewing the scanning account's login shell in `/etc/passwd` by issuing the `cat /etc/passwd` command
+3. Confirm the change by viewing the scanning account's login shell in `/etc/passwd` by issuing the `cat /etc/passwd` command:
    
    <img src="https://user-images.githubusercontent.com/86627856/169600276-fd2cd009-185f-479f-ba59-d7144481015e.png" width=50% height=50%></br>
 
@@ -61,7 +61,7 @@ The following example uses the account name **nessus-scan**. Please replace **ne
 ---
 
 #### Create the Directory Structure
-By default, PhotonOS uses the `.ssh/authorized_keys` file to store the [public keys](https://www.ssh.com/academy/ssh/authorized-key) used to grant user login access.
+By default, PhotonOS stores the [public keys](https://www.ssh.com/academy/ssh/authorized-key) used to grant login access in the `.ssh/authorized_keys` file.
 
 #### Create the Key Pair
 
