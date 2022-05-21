@@ -49,3 +49,8 @@ The default shell for new vCenter Server Appliance (VCSA) user accounts is the A
 3. Confirm the change by viewing the scanning account's login shell in `/etc/passwd` by issuing the `cat /etc/passwd` command
    
    <img src="https://user-images.githubusercontent.com/86627856/169600276-fd2cd009-185f-479f-ba59-d7144481015e.png" width=50% height=50%></br>
+
+### Public Key Authentication for Tenable Nessus Scanning Account
+Public Key Authentication is automatically enabled on vCenter Server Appliance's (VCSA) PhotonOS. The following steps can be used to [create SSH keys](https://www.ssh.com/academy/ssh/keygen) for your Tenable Nessus scanning account.
+
+##
