@@ -102,7 +102,7 @@ Create a new RSA key pair using `ssh-keygen`:
 ---
 **NOTE**
 
-The private key file should be protected from unauthorized access, as it serves as proof-of-identity for the privileged scanning account.
+The private key file must be protected from unauthorized access, as it serves as proof-of-identity for the privileged scanning account.
 
 ---
 
