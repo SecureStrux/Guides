@@ -83,7 +83,7 @@ Create a new RSA key pair using `ssh-keygen`:
 1. Issue the following command to generate your RSA key pair:
     ```Bash
     #This command will initiate RSA key pair creation.
-    ssh-keygen -t rsa
+    ssh-keygen -t rsa -m pem
     ```
 2. When prompted with `Enter file in which to save the key`, press enter. This will save the public and private key pair to the default location.
 3. When prompted, enter and then reenter a secure [password/passphrase](https://www.ssh.com/academy/ssh/passphrase).
