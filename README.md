@@ -105,3 +105,6 @@ Create a new RSA key pair using `ssh-keygen`:
 The private key file should be protected from unauthorized access, as it serves as proof-of-identity for the privileged scanning account.
 
 ---
+
+### Conclusion
+Your Tenable Nessus scanning account is now configured for public key authentication. You can [upload your private key to Nessus](https://docs.tenable.com/nessus/Content/SSH.htm) and conduct an authenticated scan against your vCenter Server Appliance (VCSA).
