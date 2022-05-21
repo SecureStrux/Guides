@@ -61,8 +61,34 @@ The following example uses the account name **nessus-scan**. Please replace **ne
 ---
 
 #### Create the Directory Structure
-By default, PhotonOS stores the [public keys](https://www.ssh.com/academy/ssh/authorized-key) used to grant login access in the `.ssh/authorized_keys` file.
+By default, PhotonOS stores the [public keys](https://www.ssh.com/academy/ssh/authorized-key) used to grant login access in the `.ssh/authorized_keys` file. To prepare for key creation, you first need to create the appropriate directory structure:
+1. Change your location to the scanning account user's home directory:
+     ```Bash
+    #This command will change the directory location to the nessus-scan accounts home directory. Change name of the account, if necessary.
+    cd /home/nessus-scan/
+    ```
+2. Create the new `.ssh` directory:
+    ```Bash
+    #This command will create a new directory named .ssh.
+    mkdir .ssh
+    ```
+3. Confirm that the `.ssh` directory was created by changing your location to `.ssh`
+    ```Bash
+    #This command will change the directory location to .ssh.
+    cd .ssh
+    ```
+    
 #### Create the Key Pair
+Create a new RSA key pair using `ssh-keygen`:
+1. Issue the following command to generate your RSA key pair:
+    ```Bash
+    #This command will initiate RSA key pair creation.
+    ssh-keygen -t rsa
+    ```
+2. When prompted with `Enter file in which to save the key`, press enter. This will save the public and private key pair to the default location.
+3. When prompted, enter and then reenter a secure [password/passphrase](https://protonmail.com/blog/protonmail-com-blog-password-vs-passphrase/).
+4. If key creation is successful you will be prompted with an output **similar** to the following:
+   <img src="https://user-images.githubusercontent.com/86627856/169667100-f1cf2d25-37af-43ea-b271-e75c45c508b9.png" width=50% height=50%></br>
 
 #### Set Permissions
 
