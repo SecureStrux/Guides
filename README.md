@@ -61,7 +61,7 @@ The following example uses the account name **nessus-scan**. Please replace **ne
 ---
 
 #### Create the Directory Structure
-By default, PhotonOS stores the [public keys](https://www.ssh.com/academy/ssh/authorized-key) used to grant login access in the `.ssh/authorized_keys` file.
+By default, PhotonOS stores the [public keys](https://www.ssh.com/academy/ssh/authorized-key) used to grant login access in the `.ssh/authorized_keys` file. Complete the following steps while logged into the vCenter Server Appliance (VCSA) as the account that you created [earlier in the tutorial](https://github.com/SecureStrux/Guides/blob/main/README.md#creating-the-scanning-account)
 
 #### Create the Key Pair
 
