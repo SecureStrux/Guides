@@ -94,6 +94,11 @@ Create a new RSA key pair using `ssh-keygen`:
     #This command will append the authorized_keys file with the contents of id_rsa.pub.
     cat id_rsa.pub >> authorized_keys
     ```
+6. Transfer the `id_rsa` private key file to a secure location and then delete the key files:
+    ```Bash
+    #This command will delete the rsa key files.
+    rm -rf id_rsa*
+    ```
 #### Set Permissions
 
 #### Disable Password Based Authentication
