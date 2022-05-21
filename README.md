@@ -61,6 +61,7 @@ The following example uses the account name **nessus-scan**. Please replace **ne
 ---
 
 #### Create the Directory Structure
+By default, PhotonOS stores [public keys](https://www.ssh.com/academy/ssh/authorized-key), which are used to grant login access to users, within the `.ssh/authorized_keys` file located in the authenticating user's home directory.
 
 #### Create the Key Pair
 
