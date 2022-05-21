@@ -53,4 +53,17 @@ The default shell for new vCenter Server Appliance (VCSA) user accounts is the A
 ### Public Key Authentication for Tenable Nessus Scanning Account
 [Nessus supports DSA and RSA key formats](https://docs.tenable.com/nessus/Content/SSH.htm), and Public Key Authentication is automatically enabled on vCenter Server Appliance's (VCSA) PhotonOS. Use the following steps to [create SSH keys](https://community.tenable.com/s/article/SSH-Public-Key-Authentication) for your Tenable Nessus scanning account.
 
-##
+---
+**NOTE**
+
+The following example uses the account name **nessus-scan**. Please replace **nessus-scan** with your Tenable Nessus scanning account name.
+
+---
+
+#### Create the Directory Structure
+
+#### Create the Key Pair
+
+#### Set Permissions
+
+#### Disable Password Based Authentication
