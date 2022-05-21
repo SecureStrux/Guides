@@ -51,7 +51,7 @@ The default shell for new vCenter Server Appliance (VCSA) user accounts is the A
    <img src="https://user-images.githubusercontent.com/86627856/169600276-fd2cd009-185f-479f-ba59-d7144481015e.png" width=50% height=50%></br>
 
 ### Public Key Authentication for Tenable Nessus Scanning Account
-[Nessus supports DSA and RSA SSH key formats](https://docs.tenable.com/nessus/Content/SSH.htm), and Public Key Authentication is automatically enabled on vCenter Server Appliance's (VCSA) PhotonOS. Use the following steps to [create SSH keys](https://community.tenable.com/s/article/SSH-Public-Key-Authentication) for your Tenable Nessus scanning account.
+[Nessus supports DSA and RSA SSH key formats](https://docs.tenable.com/nessus/Content/SSH.htm), and Public Key Authentication is automatically enabled on vCenter Server Appliance's (VCSA) PhotonOS. Use the following steps to [create SSH keys](https://community.tenable.com/s/article/SSH-Public-Key-Authentication) for your Tenable Nessus scanning account. Complete the following steps while logged into the vCenter Server Appliance (VCSA) as the account that you created [earlier in the tutorial](https://github.com/SecureStrux/Guides/blob/main/README.md#creating-the-scanning-account).
 
 ---
 **NOTE**
@@ -61,8 +61,7 @@ The following example uses the account name **nessus-scan**. Please replace **ne
 ---
 
 #### Create the Directory Structure
-By default, PhotonOS stores the [public keys](https://www.ssh.com/academy/ssh/authorized-key) used to grant login access in the `.ssh/authorized_keys` file. Complete the following steps while logged into the vCenter Server Appliance (VCSA) as the account that you created [earlier in the tutorial](https://github.com/SecureStrux/Guides/blob/main/README.md#creating-the-scanning-account)
-
+By default, PhotonOS stores the [public keys](https://www.ssh.com/academy/ssh/authorized-key) used to grant login access in the `.ssh/authorized_keys` file.
 #### Create the Key Pair
 
 #### Set Permissions
