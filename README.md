@@ -33,7 +33,7 @@ To [create](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vce
 ---
 **NOTE**
 
-Password based authentication is insecure. [Public Key Authentication](https://www.ssh.com/academy/ssh/public-key-authentication) using SSH keys.
+It is an insecure practices to use password based authentication for highly privileged accounts. Please consider [Public Key Authentication](https://www.ssh.com/academy/ssh/public-key-authentication) using SSH keys.
 
 ---
 
