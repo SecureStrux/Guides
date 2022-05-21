@@ -101,4 +101,5 @@ Create a new RSA key pair using `ssh-keygen`:
     ```
 #### Disable Password Based Authentication for the Scanning Account
 Disable password based authenticaton for the scanning account user:
+
 1. 
