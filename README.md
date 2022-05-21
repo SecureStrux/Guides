@@ -99,3 +99,9 @@ Create a new RSA key pair using `ssh-keygen`:
     #This command will delete the rsa key files.
     rm -rf id_rsa*
     ```
+---
+**NOTE**
+
+The private key file should be protected from unauthorized access, as it serves as proof-of-identity for the privileged scanning account.
+
+---
