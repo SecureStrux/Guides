@@ -86,7 +86,7 @@ Create a new RSA key pair using `ssh-keygen`:
     ssh-keygen -t rsa
     ```
 2. When prompted with `Enter file in which to save the key`, press enter. This will save the public and private key pair to the default location.
-3. When prompted, enter and then reenter a secure [password/passphrase](https://protonmail.com/blog/protonmail-com-blog-password-vs-passphrase/).
+3. When prompted, enter and then reenter a secure [password/passphrase](https://www.ssh.com/academy/ssh/passphrase).
 4. If key creation is successful you will be prompted with an output **similar** to the following:
    <img src="https://user-images.githubusercontent.com/86627856/169667135-fe0ed6c7-d6dc-4bfa-b597-e9a2c0078484.png" width=50% height=50%></br>
 5. Once the public and private key pair are created, append the `authorized_keys` file with the new public key:
