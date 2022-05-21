@@ -99,6 +99,6 @@ Create a new RSA key pair using `ssh-keygen`:
     #This command will delete the rsa key files.
     rm -rf id_rsa*
     ```
-#### Set Permissions
-
-#### Disable Password Based Authentication
+#### Disable Password Based Authentication for the Scanning Account
+Disable password based authenticaton for the scanning account user:
+1. 
