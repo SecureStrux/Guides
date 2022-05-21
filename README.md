@@ -30,6 +30,13 @@ To [create](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vce
 3.  When prompted, enter and then reenter a secure password.
 5.  If the account is created successfully you will be brought back to the Appliance Shell's `Command>` prompt.
 
+---
+**NOTE**
+
+Password based authentication is insecure. [Public key authentication](https://www.ssh.com/academy/ssh/public-key-authentication) using SSH keys.
+
+---
+
 ### Change the Scanning Account's Login Shell
 The default shell for new vCenter Server Appliance (VCSA) user accounts is the Appliance Shell (`/bin/appliancesh`). To perform Nessus Credentialed Checks, the scanning account's login shell must be changed from `/bin/appliancesh` to `/bin/bash`. To change the scanning account's login shell:
 
