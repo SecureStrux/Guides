@@ -40,12 +40,12 @@ To [create](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vce
 ---
 **NOTE**
 
-It is an insecure practices to use password based authentication for highly privileged accounts. Please consider [Public Key Authentication](https://www.ssh.com/academy/ssh/public-key-authentication) using SSH keys.
+It is an insecure practices to use password based authentication for highly privileged accounts. Please consider [Public Key Authentication](https://github.com/SecureStrux/Guides/blob/main/README.md#public-key-authentication-for-tenable-nessus-scanning-account) using SSH keys.
 
 ---
 
 ### Change the Scanning Account's Login Shell
-The default shell for new vCenter Server Appliance (VCSA) user accounts is the Appliance Shell (`/bin/appliancesh`). To perform Nessus Credentialed Checks, the scanning account's login shell must be changed from `/bin/appliancesh` to `/bin/bash`. To change the scanning account's login shell:
+The default login shell for new vCenter Server Appliance (VCSA) user accounts is the Appliance Shell (`/bin/appliancesh`). To perform Nessus Credentialed Checks on PhotonOS, the scanning account's login shell must be changed from `/bin/appliancesh` to `/bin/bash`. To change the scanning account's login shell:
 
 1. Issue the `shell` command from the Appliance Shell's `Command>` prompt to change from the **Appliance Shell** to the **Bash Shell**.
 2. Set the scanning account's login shell to `/bin/bash` by executing the following command:
@@ -58,7 +58,7 @@ The default shell for new vCenter Server Appliance (VCSA) user accounts is the A
    <img src="https://user-images.githubusercontent.com/86627856/169600276-fd2cd009-185f-479f-ba59-d7144481015e.png" width=50% height=50%></br>
 
 ### Public Key Authentication for Tenable Nessus Scanning Account
-[Nessus supports DSA and RSA SSH key formats](https://docs.tenable.com/nessus/Content/SSH.htm), and Public Key Authentication is automatically enabled on vCenter Server Appliance's (VCSA) PhotonOS. Use the following steps to [create SSH keys](https://community.tenable.com/s/article/SSH-Public-Key-Authentication) for your Tenable Nessus scanning account. Complete the following steps while logged into the vCenter Server Appliance (VCSA) as the account that you created [earlier in the tutorial](https://github.com/SecureStrux/Guides/blob/main/README.md#creating-the-scanning-account).
+[Nessus supports DSA and RSA SSH key formats](https://docs.tenable.com/nessus/Content/SSH.htm), and [Public Key Authentication](https://www.ssh.com/academy/ssh/public-key-authentication) is automatically enabled on vCenter Server Appliance's (VCSA) PhotonOS. Use the following steps to [create SSH keys](https://community.tenable.com/s/article/SSH-Public-Key-Authentication) for your Tenable Nessus scanning account. Complete the following steps while logged into the vCenter Server Appliance (VCSA) as the account that you created [earlier in this tutorial](https://github.com/SecureStrux/Guides/blob/main/README.md#creating-the-scanning-account).
 
 ---
 **NOTE**
@@ -68,7 +68,7 @@ The following example uses the account name **nessus-scan**. Please replace **ne
 ---
 
 #### Create the Directory Structure
-By default, PhotonOS stores the [public keys](https://www.ssh.com/academy/ssh/authorized-key) used to grant login access in the `.ssh/authorized_keys` file. To prepare for key creation, you first need to create the appropriate directory structure:
+By default, PhotonOS stores the [public keys](https://www.ssh.com/academy/ssh/authorized-key) used to grant login access in the `.ssh/authorized_keys` file. To prepare for key creation, you first need to create the `.ssh` directory:
 1. Change your location to the scanning account user's home directory:
      ```Bash
     #This command will change the directory location to the nessus-scan accounts home directory. Change name of the account, if necessary.
@@ -103,7 +103,7 @@ Create a new RSA key pair using `ssh-keygen`:
     #This command will append the authorized_keys file with the contents of id_rsa.pub.
     cat id_rsa.pub >> authorized_keys
     ```
-6. Transfer the `id_rsa` private key file to a secure location and then delete the key files:
+6. Transfer the `id_rsa` private key file to a secure location and then delete the key files from their default location:
     ```Bash
     #This command will delete the rsa key files.
     rm -rf id_rsa*
