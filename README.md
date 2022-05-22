@@ -1,7 +1,7 @@
 # Guides
 
 ## How To: Create a Tenable Nessus Scanning Account for vCenter Server Appliance (VCSA)
-Performing [Nessus Credentialed Checks](https://docs.tenable.com/nessus/Content/NessusCredentialedChecks.htm) and automated [compliance audits](https://docs.tenable.com/nessus/Content/Compliance.htm) on [VCSA](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vcsa.doc/GUID-223C2821-BD98-4C7A-936B-7DBE96291BA4.html) underlying [Photon OS](https://github.com/vmware/photon) requires the creation of a privileged scanning account that defaults to the `bash` shell at logon.
+Performing [Nessus Credentialed Checks](https://docs.tenable.com/nessus/Content/NessusCredentialedChecks.htm) and automated [compliance audits](https://docs.tenable.com/nessus/Content/Compliance.htm) on [VCSA's](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vcsa.doc/GUID-223C2821-BD98-4C7A-936B-7DBE96291BA4.html) underlying [Photon OS](https://github.com/vmware/photon) requires the creation of a privileged scanning account that defaults to the `bash` shell at logon.
 
 ### PhotonOS
 PhotonOS is an open source light weight Linux distribution that is optimized for running VMware's vCenter Server. Tenable has released over 1,800 [Local Security Checks for PhotonOS](https://www.tenable.com/plugins/nessus/families/PhotonOS%20Local%20Security%20Checks).
