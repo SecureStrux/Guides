@@ -1,7 +1,7 @@
 # Guides
 
 ## How To: Create a Tenable Nessus Scanning Account for vCenter Server Appliance (VCSA)
-Performing [Nessus Credentialed Checks](https://docs.tenable.com/nessus/Content/NessusCredentialedChecks.htm) and automated [compliance audits](https://docs.tenable.com/nessus/Content/Compliance.htm) on [VCSA's](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vcsa.doc/GUID-223C2821-BD98-4C7A-936B-7DBE96291BA4.html) underlying [Photon OS](https://github.com/vmware/photon) requires the creation of a privileged scanning account that defaults to the `bash` shell at logon.
+Performing [Nessus Credentialed Checks](https://docs.tenable.com/nessus/Content/NessusCredentialedChecks.htm) and automated [compliance audits](https://docs.tenable.com/nessus/Content/Compliance.htm) on [VCSA's](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vcsa.doc/GUID-223C2821-BD98-4C7A-936B-7DBE96291BA4.html) underlying [PhotonOS](https://github.com/vmware/photon) requires the creation of a privileged scanning account that defaults to the `bash` shell at logon.
 
 ---
 **NOTE**
@@ -26,7 +26,7 @@ Local users with the administrator user role can configure vCenter Server.
 Local users with the super administrator user role can configure vCenter Server, manage the local accounts, and use the Bash shell.
 
 ### Creating the Scanning Account
-To [create](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vcenter.configuration.doc/GUID-533AE852-A1F9-404E-8AC6-5D9FD65464E5.html) a privileged scanning accout:
+To [create](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vcenter.configuration.doc/GUID-533AE852-A1F9-404E-8AC6-5D9FD65464E5.html) a privileged scanning account:
 
 1. Login to the vCenter Server Appliance (VCSA) using an account that has **Super Administrator** privileges. The default user with Super Administrator privileges is **root**.
 2. Once authenticated, you will be brought to the [Appliance Shell's](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vcenter.configuration.doc/GUID-393D8255-96CF-49C9-9B17-5EC639FA3DED.html) `Command>` prompt. Run the following command from the Appliance Shell to create the scanning account:
