@@ -6,7 +6,7 @@ Performing [Nessus Credentialed Checks](https://docs.tenable.com/nessus/Content/
 ---
 **NOTE**
 
-Highly privileged account usage should be heavily monitored.
+Highly privileged account usage should be heavily monitored for unauthorized use.
 
 ---
 
