@@ -28,7 +28,7 @@ Local users with the super administrator user role can configure vCenter Server,
 ### Creating the Scanning Account
 To [create](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vcenter.configuration.doc/GUID-533AE852-A1F9-404E-8AC6-5D9FD65464E5.html) a privileged scanning accout:
 
-1. Login to the vCenter Server Appliance (VCSA) using an account that has **Super Administrator** privileges. The default user with a super administrator role is **root**.
+1. Login to the vCenter Server Appliance (VCSA) using an account that has **Super Administrator** privileges. The default user with Super Administrator privileges is **root**.
 2. Once authenticated, you will be brought to the [Appliance Shell's](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vcenter.configuration.doc/GUID-393D8255-96CF-49C9-9B17-5EC639FA3DED.html) `Command>` prompt. Run the following command from the Appliance Shell to create the scanning account:
     ```Bash
     #This command will create a new user named nessus-scan. If you do not want nessus-scan to be the name of the account, change it before executing the command.
